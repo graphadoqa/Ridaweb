@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ridha Rafeeque — Digital Marketer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#3b1574;--purple2:#451985;--yellow:#f2d363;--cream:#fff9ed;--soft:#f7eebf;--white:#fff;--ink:#24153c;--muted:#e5dff0;--line:rgba(255,249,237,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
+nav{position:absolute;top:0;left:0;width:100%;height:88px;z-index:20;display:flex;align-items:center}.navin{display:flex;justify-content:space-between;align-items:center}.logo{width:63px;height:40px;background:#fff;display:grid;place-items:center;color:var(--purple);font-family:"Playfair Display";font-weight:600;font-size:22px}.links{display:flex;gap:34px;align-items:center;color:var(--yellow);font-family:"Playfair Display";font-size:15px;text-transform:uppercase}.links a{transition:.2s}.links a:hover{color:#fff}.links .drop:after{content:"⌄";font-family:Arial;font-size:14px;margin-left:7px}
+.hero{background:var(--purple);color:#fff;min-height:760px;height:100vh;max-height:980px;position:relative;overflow:hidden;display:flex;align-items:center}.hero:before{content:"";position:absolute;width:780px;height:780px;border-radius:50%;background:radial-gradient(circle,rgba(87,30,145,.55),transparent 68%);right:-60px;top:40px}.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:var(--yellow);right:-170px;bottom:-255px}
+.hero .wrap{position:relative;z-index:2;width:min(1300px,calc(100% - 44px))}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:60px;padding-top:55px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.22em;color:var(--yellow);font-weight:700;margin-bottom:24px}.hero h1{font-family:"Playfair Display";font-weight:500;line-height:.94;letter-spacing:-.055em;font-size:clamp(64px,7.2vw,112px);margin:0 0 30px}.hero h1 span{display:block}.hero h1 .accent{color:var(--yellow)}.hero p{font-size:17px;line-height:1.7;color:rgba(255,255,255,.82);max-width:650px;margin:0 0 36px}.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 24px;border-radius:9px;font-weight:700;font-size:14px;transition:.25s}.btn.primary{background:var(--yellow);color:var(--purple)}.btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(0,0,0,.2)}
+.visual{height:610px;display:flex;justify-content:center;align-items:center;position:relative}.portrait{width:min(500px,100%);height:565px;border-radius:250px 250px 34px 34px;overflow:hidden;border:7px solid rgba(131,83,187,.9);box-shadow:0 25px 70px rgba(0,0,0,.22);position:relative;z-index:2;background:#4a3553}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 48%}.orbit{position:absolute;width:570px;height:570px;border:1px solid rgba(242,211,99,.22);border-radius:50%}.badge{position:absolute;z-index:3;left:8px;bottom:65px;background:var(--cream);color:var(--purple);padding:14px 18px;border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.2);font-weight:700}.badge small{display:block;font-size:10px;color:#6b5d7b;margin-top:3px}
+.ticker{background:var(--yellow);color:var(--purple);overflow:hidden;white-space:nowrap;padding:15px 0;font-family:"Playfair Display";font-size:21px}.ticker span{display:inline-block;animation:marquee 24s linear infinite}@keyframes marquee{to{transform:translateX(-50%)}}
+section{padding:110px 0}.about{background:var(--cream)}.kicker{color:#76509c;font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:12px}.title{font-family:"Playfair Display";font-weight:500;line-height:.98;letter-spacing:-.05em;font-size:clamp(46px,5.5vw,76px);margin:14px 0 25px}.aboutgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}.aboutcard{background:var(--purple);color:#fff;border-radius:28px;padding:44px;min-height:470px;position:relative;overflow:hidden}.aboutcard:after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:var(--yellow);right:-130px;bottom:-130px}.aboutcard .big{font-family:"Playfair Display";font-size:120px;line-height:.8;color:var(--yellow);opacity:.95}.aboutcard p{position:relative;z-index:2;font-size:18px;line-height:1.7;max-width:390px}.aboutcopy p{font-size:18px;line-height:1.8;color:#63566f;max-width:650px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid #d9cfe5;padding-top:25px;margin-top:35px}.stats strong{font-size:32px;color:var(--purple)}.stats span{display:block;color:#7b6f87;font-size:12px;margin-top:4px}
+.services{background:var(--purple);color:#fff}.services .kicker{color:var(--yellow)}.services .title{color:#fff}.servicegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{border:1px solid var(--line);padding:31px;border-radius:22px;min-height:270px;transition:.3s;background:rgba(255,255,255,.035)}.service:hover{background:var(--yellow);color:var(--purple);transform:translateY(-7px);border-color:var(--yellow)}.service .num{color:var(--yellow);font-size:12px;font-weight:700}.service:hover .num{color:var(--purple)}.service h3{font-family:"Playfair Display";font-size:28px;font-weight:500;margin:62px 0 10px}.service p{color:rgba(255,255,255,.68);line-height:1.6;font-size:14px}.service:hover p{color:#4e3b62}
+.tools{background:#efe5f8}.toolgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.tool{background:var(--cream);border:1px solid #ddd0e8;border-radius:20px;padding:25px;display:flex;justify-content:space-between;align-items:center}.tool strong{font-size:18px}.tool span{font-size:12px;color:#776884}
+.faqgrid{display:grid;grid-template-columns:.75fr 1.25fr;gap:90px}.faq{border-top:1px solid #d7cbe0}details{border-bottom:1px solid #d7cbe0;padding:21px 0}summary{list-style:none;cursor:pointer;font-weight:700;display:flex;justify-content:space-between}summary:after{content:"+";color:#76509c;font-size:22px}details[open] summary:after{content:"−"}details p{color:#75687e;line-height:1.7;max-width:650px}
+.contact{background:var(--purple);color:#fff;border-radius:32px;padding:75px;position:relative;overflow:hidden}.contact:after{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:var(--yellow);right:-200px;bottom:-250px}.contact .kicker{color:var(--yellow)}.contact .title{max-width:850px}.contact p{color:rgba(255,255,255,.75);max-width:570px;line-height:1.7}.contact .btn{margin-top:12px}
+footer{background:var(--purple);color:#fff;padding:50px 0 28px;margin-top:0;border-top:1px solid rgba(255,255,255,.12)}.foot{display:flex;justify-content:space-between;gap:30px;align-items:center}.footlinks{display:flex;gap:24px;color:var(--yellow);font-size:13px}.copy{font-size:12px;color:rgba(255,255,255,.5);margin-top:35px}
+.reveal{opacity:0;transform:translateY(28px);transition:.8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.links{display:none}.hero{height:auto;min-height:1000px;padding:130px 0 70px}.hero-grid,.aboutgrid,.faqgrid{grid-template-columns:1fr}.visual{height:500px}.portrait{height:470px}.servicegrid{grid-template-columns:1fr 1fr}.toolgrid{grid-template-columns:1fr 1fr}.hero-grid{gap:25px}.contact{padding:50px 30px}}
+@media(max-width:560px){.wrap,.hero .wrap{width:calc(100% - 28px)}nav{height:75px}.hero{min-height:900px;padding-top:100px}.hero h1{font-size:58px}.hero p{font-size:15px}.visual{height:400px}.portrait{height:380px;width:310px}.orbit{width:360px;height:360px}.badge{left:0;bottom:25px}.servicegrid,.toolgrid,.stats{grid-template-columns:1fr}.title{font-size:48px}.aboutcard{min-height:360px}.contact{border-radius:24px;padding:42px 25px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="logo" href="#">R</a><div class="links"><a href="#home">Home</a><a href="#about">About</a><a class="drop" href="#services">Services</a><a href="#blog">Blogs</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="home">
+<div class="wrap hero-grid">
+<div class="reveal">
+<div class="eyebrow">Digital marketing · Strategy · Growth</div>
+<h1><span>Passionate</span><span class="accent">Digital Marketer</span></h1>
+<p>I connect creativity with digital strategy to help brands build a stronger online presence and turn ideas into meaningful growth.</p>
+<a class="btn primary" href="#contact">Let's work together <span>→</span></a>
+</div>
+<div class="visual reveal"><div class="orbit"></div><div class="portrait"><img src="assets/hero-photo.jpg" alt="Ridha Rafeeque"></div><div class="badge">Ridha Rafeeque<small>Digital Marketer</small></div></div>
+</div>
+</header>
+
+<div class="ticker"><span>STRATEGY · SOCIAL MEDIA · SEO · CONTENT CREATION · PAID ADS · WEBSITE OPTIMIZATION · BRAND & CAMPAIGN STRATEGY · STRATEGY · SOCIAL MEDIA · SEO · CONTENT CREATION · PAID ADS · WEBSITE OPTIMIZATION · BRAND & CAMPAIGN STRATEGY · </span></div>
+
+<section id="about"><div class="wrap aboutgrid"><div class="aboutcard reveal"><div class="big">R.</div><p>Creative thinking meets digital strategy. I build clear, engaging and purposeful online experiences for brands that want to grow.</p></div><div class="aboutcopy reveal"><div class="kicker">About me</div><h2 class="title">Turning ideas into digital impact.</h2><p>I’m Ridha Rafeeque, a passionate digital marketer focused on creating meaningful digital experiences. From social media and content to paid campaigns, SEO and websites, I combine creativity with strategy to help brands grow.</p><div class="stats"><div><strong>6+</strong><span>Core services</span></div><div><strong>360°</strong><span>Digital approach</span></div><div><strong>1:1</strong><span>Client focus</span></div></div></div></div></section>
+
+<section class="services" id="services"><div class="wrap"><div class="reveal"><div class="kicker">What I do</div><h2 class="title">Digital services<br>built for growth.</h2></div><div class="servicegrid">
+<article class="service reveal"><span class="num">01</span><h3>Social Media</h3><p>Content, community and channel strategy that keeps your brand consistent and relevant.</p></article>
+<article class="service reveal"><span class="num">02</span><h3>SEO</h3><p>Search-focused improvements that help the right people discover your brand organically.</p></article>
+<article class="service reveal"><span class="num">03</span><h3>Content Creation</h3><p>Purposeful visual and written content designed to communicate, connect and convert.</p></article>
+<article class="service reveal"><span class="num">04</span><h3>Paid Ads</h3><p>Campaign planning and optimization across paid channels with clear business objectives.</p></article>
+<article class="service reveal"><span class="num">05</span><h3>Website Optimization</h3><p>Sharper messaging, cleaner journeys and stronger conversion-focused website experiences.</p></article>
+<article class="service reveal"><span class="num">06</span><h3>Brand & Campaign Strategy</h3><p>Big-picture thinking that connects positioning, creative and marketing execution.</p></article>
+</div></div></section>
+
+<section class="tools"><div class="wrap"><div class="reveal"><div class="kicker">Toolkit</div><h2 class="title">The tools behind<br>the work.</h2></div><div class="toolgrid">
+<div class="tool reveal"><strong>Meta</strong><span>Social & advertising</span></div><div class="tool reveal"><strong>ChatGPT</strong><span>AI & ideation</span></div><div class="tool reveal"><strong>Elementor</strong><span>Web design</span></div><div class="tool reveal"><strong>Canva</strong><span>Creative production</span></div><div class="tool reveal"><strong>Shopify</strong><span>E-commerce</span></div><div class="tool reveal"><strong>Google Ads</strong><span>Paid search</span></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap faqgrid"><div class="reveal"><div class="kicker">FAQ</div><h2 class="title">Things you<br>may ask.</h2></div><div class="faq reveal">
+<details open><summary>What kind of brands do you work with?</summary><p>I work across businesses and personal brands that want a stronger, more intentional digital presence.</p></details>
+<details><summary>Can you handle the full digital presence?</summary><p>Yes. Services can be combined across social media, content, advertising, SEO, websites and campaign strategy depending on the project.</p></details>
+<details><summary>Do you offer custom packages?</summary><p>Yes. A project can be structured around the goals, channels and level of support your brand needs.</p></details>
+<details><summary>How do we start?</summary><p>Send a message with your brand, goals and what you need help with, and we can define the right scope together.</p></details>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact reveal"><div class="kicker">Start a project</div><h2 class="title">Let's make your brand impossible to ignore.</h2><p>Have an idea, a campaign or a brand that needs a stronger digital direction? Let's turn it into something people remember.</p><a class="btn primary" href="mailto:hello@ridharafeeque.com">Get in touch →</a></div></div></section>
+
+<footer id="blog"><div class="wrap"><div class="foot"><a class="logo" href="#">R</a><div class="footlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="copy">© 2026 Ridha Rafeeque. All rights reserved.</div></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+</script>
+</body></html>
